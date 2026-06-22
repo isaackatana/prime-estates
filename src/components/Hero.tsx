@@ -1,3 +1,5 @@
+import { ArrowRight, CirclePlay } from "lucide-react";
+
 export default function Hero() {
   return (
     <section
@@ -27,12 +29,12 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col gap-4 sm:flex-row">
-            <button className="rounded-xl bg-amber-500 px-8 py-4 font-semibold text-white transition hover:bg-amber-600">
-              Browse Properties
+            <button className="flex gap-1 rounded-xl bg-amber-500 px-8 py-4 font-semibold text-white transition hover:bg-amber-600">
+              BROWSE PROPERTIES <ArrowRight /> 
             </button>
 
-            <button className="rounded-xl border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900">
-              Book Consultation
+            <button className="flex gap-1 rounded-xl border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900">
+              <CirclePlay /> WATCH VIDEO
             </button>
           </div>
         </div>
