@@ -90,37 +90,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Newsletter */}
-      <div className="border-t border-slate-800">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-10 md:flex-row">
-          <div>
-            <h3 className="text-xl font-semibold">
-              Subscribe to Property Updates
-            </h3>
-
-            <p className="text-slate-400">
-              Get notified about new listings and
-              investment opportunities.
-            </p>
-          </div>
-
-          <form className="flex w-full max-w-md gap-3">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 rounded-xl border border-slate-700 bg-slate-900 px-4 py-3 outline-none"
-            />
-
-            <button
-              type="submit"
-              className="rounded-xl bg-amber-500 px-6 py-3 font-medium text-white hover:bg-amber-600"
-            >
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div>
-
       {/* Bottom Footer */}
       <div className="border-t border-slate-800">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 text-sm text-slate-500 md:flex-row">
