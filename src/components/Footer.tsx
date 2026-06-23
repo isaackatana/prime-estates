@@ -6,7 +6,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-white">
+    <footer className="bg-[#0c3638] text-white">
       {/* Top Footer */}
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-4">

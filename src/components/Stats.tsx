@@ -2,7 +2,7 @@ import { Building2, Headset, House, Users } from "lucide-react";
 
 export default function Stats() {
   return (
-    <section className="bg-slate-950 py-20 text-white">
+    <section className="bg-[#0c3638] py-20 text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-4">
         <div className="flex gap-4 items-center">
           <House size={50}/>

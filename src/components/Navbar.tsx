@@ -79,7 +79,7 @@ export default function Navbar() {
             </NavLink>
           ))}
 
-          <button className="mt-2 flex items-center gap-2 rounded-xl bg-amber-500 px-5 py-3 text-white hover:bg-amber-600 transition w-fit">
+          <button className="mt-2 flex items-center gap-2 rounded-xl bg-[#e2b230] px-5 py-3 text-white hover:bg-amber-600 transition w-fit">
             <CalendarDays size={18} />
             BOOK CONSULTATION
           </button>

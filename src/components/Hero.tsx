@@ -1,12 +1,14 @@
 import { ArrowRight, CirclePlay } from "lucide-react";
 
+import heroImage from "../assets/hero/1.jpg";
+
 export default function Hero() {
   return (
     <section
       className="relative min-h-screen bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c')",
+          `url(${heroImage})`,
       }}
     >
       <div className="absolute inset-0 bg-black/60" />
