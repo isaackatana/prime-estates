@@ -71,12 +71,12 @@ export default function Footer() {
             <div className="space-y-4 text-slate-400">
               <div className="flex items-center gap-3">
                 <Phone size={18} />
-                <span>+254 700 000 000</span>
+                <span>+254 705 279 631</span>
               </div>
 
               <div className="flex items-center gap-3">
                 <Mail size={18} />
-                <span>info@primeestate.co.ke</span>
+                <span>info@primeestates.co.ke</span>
               </div>
 
               <div className="flex items-start gap-3">
@@ -94,12 +94,12 @@ export default function Footer() {
       <div className="border-t border-slate-800">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 text-sm text-slate-500 md:flex-row">
           <p>
-            © {new Date().getFullYear()} Prime Estate.
+            © {new Date().getFullYear()} Prime Estates.
             All rights reserved.
           </p>
 
           <p>
-            Website Designed & Developed by
+            Designed & Developed by
             <span className="ml-1 font-semibold text-amber-400">
               Isaac Katana
             </span>
