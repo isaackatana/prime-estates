@@ -1,4 +1,4 @@
-import { ArrowRight, CirclePlay } from "lucide-react";
+import { ArrowRight, CirclePlay, ShieldCheck } from "lucide-react";
 
 import heroImage from "../assets/hero/1.jpg";
 
@@ -38,6 +38,76 @@ export default function Hero() {
             <button className="flex gap-1 rounded-xl border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900">
               <CirclePlay /> WATCH VIDEO
             </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-3 ml-6 mr-6 rounded-3xl bg-white p-3 shadow-2xl">
+        <div className="grid md:grid-cols-5">
+          <div className="border-r p-5">
+            <p className="text-xs uppercase text-slate-500">
+              Location
+            </p>
+
+            <select className="mt-2 w-full outline-none">
+              <option>Any Location</option>
+              <option>Diani</option>
+              <option>Nyali</option>
+              <option>Mombasa</option>
+            </select>
+          </div>
+
+          <div className="border-r p-5">
+            <p className="text-xs uppercase text-slate-500">
+              Property Type
+            </p>
+
+            <select className="mt-2 w-full outline-none">
+              <option>Any Type</option>
+              <option>Villa</option>
+              <option>Apartment</option>
+            </select>
+          </div>
+
+          <div className="border-r p-5">
+            <p className="text-xs uppercase text-slate-500">
+              Price Range
+            </p>
+
+            <select className="mt-2 w-full outline-none">
+              <option>Any Price</option>
+            </select>
+          </div>
+
+          <div className="border-r p-5">
+            <p className="text-xs uppercase text-slate-500">
+              Bedrooms
+            </p>
+
+            <select className="mt-2 w-full outline-none">
+              <option>Any</option>
+            </select>
+          </div>
+
+          <div className="flex items-center justify-center p-3">
+            <button className="w-full rounded-xl bg-slate-950 py-4 text-white">
+              Search Properties
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute right-10 top-1/2 hidden -translate-y-1/2 lg:block">
+        <div className="flex items-center gap-2 rounded-2xl border border-white/10 bg-black/40 p-6 backdrop-blur-md">
+          <ShieldCheck size={50} />
+          <div>
+            <h3 className="text-xl font-semibold text-white">
+              Trusted by 100+ Clients
+            </h3>
+
+            <p className="mt-2 text-slate-300">
+              Delivering premier service you can trust.
+            </p>
           </div>
         </div>
       </div>

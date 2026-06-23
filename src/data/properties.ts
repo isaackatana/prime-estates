@@ -31,4 +31,13 @@ export const properties = [
     description:
       "Spacious family home with a large compound.",
   },
+
+  {
+    id: 1,
+    title: "Luxury Villa",
+    location: "Diani",
+    type: "Villa",
+    bedrooms: 4,
+    price: 45000000,
+  },
 ];

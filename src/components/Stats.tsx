@@ -10,7 +10,8 @@ export default function Stats() {
             <h2 className="text-5xl font-bold text-amber-400">
               100+
             </h2>
-            <p>Properties Managed</p>
+            <p className="text-2xl font-bold">Properties Managed</p>
+            <p>Across Mombasa & Diani</p>
           </div>
         </div>
 
@@ -20,7 +21,8 @@ export default function Stats() {
             <h2 className="text-5xl font-bold text-amber-400">
               200+
             </h2>
-            <p>Happy Clients</p>
+            <p className="text-2xl font-bold">Happy Clients</p>
+            <p>Satisfied homeowners and investors</p>
           </div>
         </div>
 
@@ -30,7 +32,8 @@ export default function Stats() {
             <h2 className="text-5xl font-bold text-amber-400">
               10+
             </h2>
-            <p>Years Experience</p>
+            <p className="text-2xl font-bold">Years Experience</p>
+            <p>Local market expertise you can rely on</p>
           </div>
         </div>
 
@@ -40,7 +43,8 @@ export default function Stats() {
             <h2 className="text-5xl font-bold text-amber-400">
               24/7
             </h2>
-            <p>Support</p>
+            <p className="text-2xl font-bold">Support</p>
+            <p>We're here whenever you need us</p>
           </div>
         </div>
       </div>
