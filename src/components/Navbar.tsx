@@ -27,11 +27,13 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
 
         {/* Logo */}
-        <img
-          src="/prime-estates-logo.jpg"
-          alt="Prime Estate Logo"
-          className="h-10 w-auto"
-        />
+        <NavLink to="/">
+          <img
+            src="/prime-estates-logo.jpg"
+            alt="Prime Estate Logo"
+            className="h-10 w-auto"
+          />
+        </NavLink>
 
         {/* Desktop Nav */}
         <nav className="hidden gap-8 md:flex">
