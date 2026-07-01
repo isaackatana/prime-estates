@@ -5,7 +5,7 @@ export default function FloatingContact() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       {/* Call Button */}
       <a
-        href="tel:+254700000000"
+        href="tel:+254100434316"
         className="flex items-center gap-3 rounded-xl bg-slate-900 px-5 py-4 text-white shadow-xl transition hover:scale-105"
       >
         <Phone size={20} />
@@ -14,7 +14,7 @@ export default function FloatingContact() {
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/254700000000"
+        href="https://wa.me/254100434316"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-3 rounded-xl bg-green-500 px-5 py-4 text-white shadow-xl transition hover:scale-105"
