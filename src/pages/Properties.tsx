@@ -66,29 +66,20 @@ export default function Properties() {
       <div className="mx-auto max-w-7xl px-6">
         {/* Heading */}
 
-        <div className="mb-16 text-center">
+        <div className="mb-4 text-center">
           <p className="uppercase tracking-[0.3em] text-amber-500">
-            Discover
-          </p>
-
-          <h1 className="mt-3 text-5xl font-bold text-slate-900">
-            Find Your Perfect Property
-          </h1>
-
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-600">
-            Browse our premium collection of villas, apartments,
-            homes and investment properties across Kenya.
+            Discover Properties
           </p>
         </div>
 
         {/* Status Tabs */}
 
-        <div className="mb-8 flex flex-wrap justify-center gap-4">
+        <div className="mb-4 flex flex-wrap justify-center gap-2">
           {["All", "For Sale", "For Rent"].map((item) => (
             <button
               key={item}
               onClick={() => setStatus(item)}
-              className={`rounded-full px-6 py-3 font-semibold transition ${
+              className={`rounded-full px-5 py-2 font-semibold transition ${
                 status === item
                   ? "bg-amber-500 text-white"
                   : "bg-white hover:bg-slate-100"
