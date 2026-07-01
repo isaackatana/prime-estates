@@ -17,6 +17,16 @@ export const properties = [
     price: 45000000,
     status: "For Sale",
     image: villa1,
+    description:
+      "Experience luxury beachfront living in this stunning villa featuring spacious interiors, a private swimming pool, landscaped gardens, and direct beach access.",
+    features: [
+      "Swimming Pool",
+      "Beach Access",
+      "Garden",
+      "Ocean View",
+      "Parking",
+      "24/7 Security",
+    ],
   },
   {
     id: 2,
@@ -29,6 +39,16 @@ export const properties = [
     price: 12500000,
     status: "For Sale",
     image: apartment1,
+    description:
+      "A stylish apartment with panoramic ocean views, modern finishes, spacious balconies, and premium amenities.",
+    features: [
+      "Balcony",
+      "Ocean View",
+      "Elevator",
+      "Gym",
+      "Parking",
+      "Security",
+    ],
   },
   {
     id: 3,
@@ -41,6 +61,15 @@ export const properties = [
     price: 18500000,
     status: "For Sale",
     image: house1,
+    description:
+      "Perfect family home located in a peaceful neighborhood with a spacious compound and modern interiors.",
+    features: [
+      "Garden",
+      "Parking",
+      "Security",
+      "Water Storage",
+      "Solar Water Heater",
+    ],
   },
   {
     id: 4,
@@ -53,6 +82,16 @@ export const properties = [
     price: 65000000,
     status: "For Rent",
     image: villa2,
+    description:
+      "Luxury holiday villa with breathtaking ocean views, private pool, entertainment area, and beautifully landscaped gardens.",
+    features: [
+      "Private Pool",
+      "Ocean View",
+      "BBQ Area",
+      "Beach Access",
+      "WiFi",
+      "Parking",
+    ],
   },
   {
     id: 5,
@@ -65,6 +104,15 @@ export const properties = [
     price: 21000000,
     status: "For Sale",
     image: apartment2,
+    description:
+      "Elegant executive apartment in Nyali offering spacious rooms, modern finishes, and easy access to shopping and beaches.",
+    features: [
+      "Swimming Pool",
+      "Gym",
+      "Parking",
+      "Elevator",
+      "Security",
+    ],
   },
   {
     id: 6,
@@ -77,5 +125,14 @@ export const properties = [
     price: 27000000,
     status: "For Sale",
     image: house2,
+    description:
+      "Beautiful family home with lush gardens, spacious living areas, and excellent access to schools and shopping centers.",
+    features: [
+      "Garden",
+      "Parking",
+      "Solar Power",
+      "Security",
+      "Water Tank",
+    ],
   },
 ];
