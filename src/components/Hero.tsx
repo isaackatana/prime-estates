@@ -114,7 +114,7 @@ export default function Hero() {
 
       <div className="absolute right-8 top-40 hidden xl:block">
         <div className="flex items-center gap-2 rounded-2xl border border-white/10 bg-black/40 p-6 backdrop-blur-md">
-          <ShieldCheck size={50} />
+          <ShieldCheck size={50} className="text-white" />
           <div>
             <h3 className="text-xl font-semibold text-white">
               Trusted by 100+ Clients

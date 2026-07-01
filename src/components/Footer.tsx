@@ -12,6 +12,8 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+import { NavLink } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="bg-[#0c3638] text-white">
@@ -20,7 +22,9 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 lg:grid-cols-4">
         {/* Company */}
         <div>
-          <img className="h-10 w-auto" src="/prime-estates-logo.jpg" alt="" />
+          <NavLink to="/">
+           <img className="h-10 w-auto" src="/prime-estates-logo.jpg" alt="" />
+          </NavLink>
 
           <p className="mt-6 leading-8 text-slate-300">
             Comprehensive real estate solutions across residential sales,

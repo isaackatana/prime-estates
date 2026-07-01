@@ -1,28 +1,87 @@
+import { useState } from "react";
 import { properties } from "../data/properties";
+import PropertyCard from "../components/PropertyCard";
+import PropertyFilters from "../components/PropertyFilters";
 
 export default function Properties() {
+  const [location, setLocation] = useState("");
+  const [type, setType] = useState("");
+  const [bedrooms, setBedrooms] = useState("");
+  const [price, setPrice] = useState("");
+
+  const filteredProperties = properties.filter((property) => {
+    const matchesLocation =
+      !location || property.location === location;
+
+    const matchesType =
+      !type || property.type === type;
+
+    const matchesBedrooms =
+      !bedrooms || property.bedrooms >= Number(bedrooms);
+
+    const matchesPrice =
+      !price || property.price <= Number(price);
+
+    return (
+      matchesLocation &&
+      matchesType &&
+      matchesBedrooms &&
+      matchesPrice
+    );
+  });
+
   return (
-    <section className="page">
-      <div className="container">
-        <h1>Available Properties</h1>
+    <section className="bg-slate-50 py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="mb-12 text-center">
+          <p className="uppercase tracking-[0.25em] text-amber-500">
+            Explore
+          </p>
 
-        <div className="property-grid">
-          {properties.map((property) => (
-            <div className="property-card" key={property.id}>
-              <img src={property.image} alt={property.title} />
+          <h2 className="mt-2 text-5xl font-bold">
+            Find Your Perfect Property
+          </h2>
+        </div>
 
-              <div className="property-content">
-                <h3>{property.title}</h3>
+        <PropertyFilters
+          location={location}
+          setLocation={setLocation}
+          type={type}
+          setType={setType}
+          bedrooms={bedrooms}
+          setBedrooms={setBedrooms}
+          price={price}
+          setPrice={setPrice}
+        />
 
-                <p>{property.location}</p>
+        <p className="mb-8 text-slate-600">
+          Showing{" "}
+          <span className="font-bold">
+            {filteredProperties.length}
+          </span>{" "}
+          properties
+        </p>
 
-                <h4>KES {property.price}</h4>
-
-                <button>View Property</button>
-              </div>
-            </div>
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          {filteredProperties.map((property) => (
+            <PropertyCard
+              key={property.id}
+              property={property}
+            />
           ))}
         </div>
+
+        {filteredProperties.length === 0 && (
+          <div className="rounded-2xl bg-white py-20 text-center shadow">
+            <h3 className="text-2xl font-bold">
+              No properties found
+            </h3>
+
+            <p className="mt-3 text-slate-500">
+              Try changing your filters.
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,43 +1,81 @@
+import villa1 from "../assets/properties/villa1.jpg";
+import villa2 from "../assets/properties/villa2.jpg";
+import apartment1 from "../assets/properties/apartment1.jpg";
+import apartment2 from "../assets/properties/apartment2.jpg";
+import house1 from "../assets/properties/house1.jpg";
+import house2 from "../assets/properties/house2.jpg";
+
 export const properties = [
   {
     id: 1,
-    title: "Luxury Villa",
-    location: "Diani Beach",
-    price: "45,000,000",
-    image:
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
-    description:
-      "Modern luxury villa with ocean views and private pool.",
-  },
-
-  {
-    id: 2,
-    title: "Beach Apartment",
-    location: "Nyali",
-    price: "18,000,000",
-    image:
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688",
-    description:
-      "Stylish apartment close to beaches and amenities.",
-  },
-
-  {
-    id: 3,
-    title: "Family Home",
-    location: "Mtwapa",
-    price: "12,000,000",
-    image:
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
-    description:
-      "Spacious family home with a large compound.",
-  },
-
-  {
-    id: 1,
-    title: "Luxury Villa",
+    title: "Luxury Beach Villa",
     location: "Diani",
     type: "Villa",
     bedrooms: 4,
+    bathrooms: 4,
+    size: 420,
     price: 45000000,
+    status: "For Sale",
+    image: villa1,
+  },
+  {
+    id: 2,
+    title: "Modern Ocean Apartment",
+    location: "Diani",
+    type: "Apartment",
+    bedrooms: 2,
+    bathrooms: 2,
+    size: 145,
+    price: 12500000,
+    status: "For Sale",
+    image: apartment1,
+  },
+  {
+    id: 3,
+    title: "Family House",
+    location: "Mombasa",
+    type: "House",
+    bedrooms: 3,
+    bathrooms: 2,
+    size: 240,
+    price: 18500000,
+    status: "For Sale",
+    image: house1,
+  },
+  {
+    id: 4,
+    title: "Holiday Villa",
+    location: "Diani",
+    type: "Villa",
+    bedrooms: 5,
+    bathrooms: 5,
+    size: 520,
+    price: 65000000,
+    status: "For Rent",
+    image: villa2,
+  },
+  {
+    id: 5,
+    title: "Executive Apartment",
+    location: "Nyali",
+    type: "Apartment",
+    bedrooms: 3,
+    bathrooms: 2,
+    size: 180,
+    price: 21000000,
+    status: "For Sale",
+    image: apartment2,
+  },
+  {
+    id: 6,
+    title: "Garden Family Home",
+    location: "Nyali",
+    type: "House",
+    bedrooms: 4,
+    bathrooms: 3,
+    size: 310,
+    price: 27000000,
+    status: "For Sale",
+    image: house2,
   },
 ];
